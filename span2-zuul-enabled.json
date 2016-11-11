@@ -1,0 +1,49 @@
+{
+  "host": {
+    "serviceName": "bar-service",
+    "address": "192.168.1.102",
+    "port": 8081
+  },
+  "spans": [
+    {
+      "begin": 1478869360251,
+      "end": 1478869360269,
+      "name": "greeting",
+      "traceId": 7541390901139541147,
+      "parents": [
+        -4406636903463240345
+      ],
+      "spanId": 6736328612101619868,
+      "exportable": true,
+      "tags": {
+        "mvc.controller.method": "greeting",
+        "mvc.controller.class": "BarApp"
+      },
+      "logs": [],
+      "durationMicros": 17869
+    },
+    {
+      "begin": 1478869360233,
+      "end": 1478869360271,
+      "name": "http:/proxy",
+      "traceId": 7541390901139541147,
+      "parents": [
+        7541390901139541147
+      ],
+      "spanId": -4406636903463240345,
+      "remote": true,
+      "exportable": true,
+      "logs": [
+        {
+          "timestamp": 1478869360235,
+          "event": "sr"
+        },
+        {
+          "timestamp": 1478869360271,
+          "event": "ss"
+        }
+      ],
+      "durationMicros": 37438
+    }
+  ]
+}

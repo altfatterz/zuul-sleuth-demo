@@ -1,0 +1,59 @@
+{
+  "host": {
+    "serviceName": "foo-service",
+    "address": "192.168.1.102",
+    "port": 0
+  },
+  "spans": [
+    {
+      "begin": 1478869360097,
+      "end": 1478869360278,
+      "name": "http:/proxy",
+      "traceId": 7541390901139541147,
+      "parents": [
+        7541390901139541147
+      ],
+      "spanId": -4406636903463240345,
+      "exportable": true,
+      "tags": {
+        "http.path": "/proxy",
+        "http.url": "/proxy",
+        "http.status_code": "200",
+        "http.method": "GET",
+        "lc": "zuul"
+      },
+      "logs": [
+        {
+          "timestamp": 1478869360097,
+          "event": "cs"
+        },
+        {
+          "timestamp": 1478869360278,
+          "event": "cr"
+        }
+      ],
+      "durationMicros": 181457
+    },
+    {
+      "begin": 1478869360049,
+      "end": 1478869360284,
+      "name": "http:/proxy",
+      "traceId": 7541390901139541147,
+      "spanId": 7541390901139541147,
+      "exportable": true,
+      "logs": [
+        {
+          "timestamp": 1478869360049,
+          "event": "sr"
+        },
+        {
+          "timestamp": 1478869360284,
+          "event": "ss"
+        }
+      ],
+      "durationMicros": 235552
+    }
+  ]
+}
+
+// 2016-11-11 14:02:40.057  INFO [foo-service,68a867118ec90c9b,68a867118ec90c9b,true] 9519 --- [nio-8080-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/proxy/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]

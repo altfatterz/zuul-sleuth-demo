@@ -1,0 +1,41 @@
+{
+  "host": {
+    "serviceName": "foo-service",
+    "address": "192.168.1.102",
+    "port": 0
+  },
+  "spans": [
+    {
+      "begin": 1478869814434,
+      "end": 1478869814434,
+      "name": "http:/proxy",
+      "traceId": 7454847378209770775,
+      "parents": [
+        7454847378209770775
+      ],
+      "spanId": -4634459219756515098,
+      "exportable": true,
+      "logs": [],
+      "durationMicros": 116
+    },
+    {
+      "begin": 1478869814199,
+      "end": 1478869814434,
+      "name": "http:/proxy",
+      "traceId": 7454847378209770775,
+      "spanId": 7454847378209770775,
+      "exportable": true,
+      "logs": [
+        {
+          "timestamp": 1478869814200,
+          "event": "sr"
+        },
+        {
+          "timestamp": 1478869814434,
+          "event": "ss"
+        }
+      ],
+      "durationMicros": 234749
+    }
+  ]
+}
